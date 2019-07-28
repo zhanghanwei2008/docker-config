@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+   springboot1:
+     image: 192.168.31.107:5000/demo:dev
+     ports:
+     - '10000:8084'
+   springboot2:
+     image: 192.168.31.107:5000/demo:dev
+     ports:
+     - '10001:8084'     
+   springboot3:
+     image: 192.168.31.107:5000/demo:dev
+     ports:
+     - '10002:8084'
