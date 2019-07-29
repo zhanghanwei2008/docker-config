@@ -23,7 +23,7 @@ services:
      ports:
      - '20010:9090'
      links:
-     -eurekaserver1       
+     - eurekaserver1       
      depends_on:
      - eurekaserver1
    snow-server-provider2:
@@ -31,7 +31,7 @@ services:
      ports:
      - '20011:9090'
      links:
-     -eurekaserver1       
+     - eurekaserver1       
      depends_on:
      - eurekaserver1
    snow-server-provider3:
@@ -39,7 +39,7 @@ services:
      ports:
      - '20012:9090'     
      links:
-     -eurekaserver1       
+     - eurekaserver1       
      depends_on:
      - eurekaserver1
      
