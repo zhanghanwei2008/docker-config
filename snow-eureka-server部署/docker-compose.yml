@@ -42,7 +42,6 @@ services:
      -eurekaserver1       
      depends_on:
      - eurekaserver1
-     
-     
+        
      
      
