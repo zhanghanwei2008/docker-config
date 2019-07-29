@@ -39,7 +39,10 @@ services:
      ports:
      - '20012:9090'     
      links:
-     - eurekaserver1       
+     -eurekaserver1       
      depends_on:
      - eurekaserver1
+     
+     
+     
      
