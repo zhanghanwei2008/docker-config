@@ -18,3 +18,15 @@ services:
      - '20002:19090'
      environment:
      - spring.profiles.active=peer3
+   snow-server-provider1:
+     image: 192.168.31.107:5000/snow-server-provider:dev
+     ports:
+     - '20010:9090'
+   snow-server-provider2:
+     image: 192.168.31.107:5000/snow-server-provider:dev
+     ports:
+     - '20011:9090'
+   snow-server-provider3:
+     image: 192.168.31.107:5000/snow-server-provider:dev
+     ports:
+     - '20012:9090'     
