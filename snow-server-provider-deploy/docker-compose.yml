@@ -1,14 +1,14 @@
 version: "3.1"
 services:
-   snow-server-provider1:
+   snow-server-provider:
      image: 192.168.31.107:5000/snow-server-provider:dev
      ports:
      - '20010:9090'
-   snow-server-provider2:
-     image: 192.168.31.107:5000/snow-server-provider:dev
+   snow-client-demo:
+     image: 192.168.31.107:5000/snow-client-demo:dev
      ports:
-     - '20011:9090'
-   snow-server-provider3:
-     image: 192.168.31.107:5000/snow-server-provider:dev
+     - '20000:20000'
+   snow-zuul-server:
+     image: 192.168.31.107:5000/snow-zuul-server:dev
      ports:
-     - '20012:9090'
+     - '6060:6060'
